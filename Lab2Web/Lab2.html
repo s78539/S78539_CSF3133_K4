@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Profile Page</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 6px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header: page title -->
+  <header>
+    <h1>Muhamad Anis Syahir's Profile Page</h1>
+    <p>CSF3133: Web-Based Interface Design - Lab Exercise 2</p>
+  </header>
+
+  <!-- Navigation: links to sections on this page -->
+  <nav>
+    <a href="#profile">Profile</a> |
+    <a href="#form">Registration Form</a> |
+    <a href="#about">About Me</a>
+  </nav>
+
+  <!-- Section 1: Profile table -->
+  <section id="profile">
+    <h2>Personal Information</h2>
+    <table>
+      <tr>
+        <th colspan="3">Student Information</th>
+      </tr>
+      <tr>
+        <th>Attribute</th>
+        <th>Detail</th>
+        <th>Remarks</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Muhamad Anis Syahir Bin Mohamad Shahapuddin</td>
+        <td>Full name</td>
+      </tr>
+      <tr>
+        <td>Student ID</td>
+        <td>S78539</td>
+        <td>Group K4</td>
+      </tr>
+      <tr>
+        <td>Occupation</td>
+        <td>Student</td>
+        <td>Universiti Malaysia Terengganu</td>
+      </tr>
+      <tr>
+        <td>Hobbies</td>
+        <td>Hiking, Badminton, Gaming</td>
+        <td>Weekend activities</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Section 2: Registration form -->
+  <section id="form">
+    <h2>Registration Form</h2>
+    <form action="submit_form.php" method="post">
+
+      <label for="fname">Name:</label><br>
+      <input type="text" id="fname" name="fullname"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend>Select your favorite hobbies:</legend>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Hiking">
+        <label for="hobby1">Hiking</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2" value="Badminton">
+        <label for="hobby2">Badminton</label><br>
+        <input type="checkbox" id="hobby3" name="hobby3" value="Gaming">
+        <label for="hobby3">Gaming</label><br>
+        <input type="checkbox" id="hobby4" name="hobby4" value="Reading">
+        <label for="hobby4">Reading</label>
+      </fieldset>
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Section 3: About me article -->
+  <section id="about">
+    <h2>About Me</h2>
+    <article>
+      <h3>My Interests</h3>
+      <p>
+        I enjoy <strong>programming</strong>, playing sports and learning
+        <em>new things</em>. I am currently studying web design and
+        learning how to build structured web pages with HTML.
+      </p>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &copy; 2026 Muhamad Anis Syahir. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
