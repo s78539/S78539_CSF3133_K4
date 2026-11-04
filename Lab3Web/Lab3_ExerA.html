@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CampusBake Order</title>
+</head>
+<body>
+<!-- Lab 3 Problem A | Muhamad Anis Syahir | S78539 | K4 -->
+
+<!-- Header: bakery name in h1, slogan in a span -->
+<div id="header">
+<h1>CampusBake&reg; <span>Fresh from our oven!</span></h1>
+</div>
+
+<!-- Navigation: inline links separated by " | " -->
+<div id="nav">
+<a href="#content">Home</a> | <a href="#orderform">Order</a> | <a href="#footer">Contact</a>
+</div>
+
+<!-- Content: introduction and order form -->
+<div id="content">
+<h2>Welcome</h2>
+
+<!-- Intro paragraph with inline elements: strong, em, span, a -->
+<p>Welcome to <strong>CampusBake</strong>, the <em>best</em> bakery on campus.
+Order <span>before 5 PM</span> and <a href="#orderform">fill in the form below</a>.</p>
+
+<!-- Order form inside a div -->
+<div id="orderform">
+<h2>Order Form</h2>
+
+<!-- oninput calculates the total price automatically -->
+<form action="#" oninput="total.value = Number(cupcakes.value) * 3 + Number(slices.value) * 5">
+
+<!-- Customer details -->
+<p>Name: <input type="text" name="custname" placeholder="Your name" required autofocus></p>
+<p>Phone: <input type="tel" name="phone" placeholder="012-3456789" required></p>
+<p>E-mail: <input type="email" name="email" required></p>
+
+<!-- Pick-up details -->
+<p>Pick-up date: <input type="date" name="pdate"></p>
+<p>Pick-up time: <input type="time" name="ptime"></p>
+
+<!-- Flavour with datalist -->
+<p>Flavour: <input name="flavour" list="flavours"></p>
+<datalist id="flavours">
+<option value="Chocolate">
+<option value="Vanilla">
+<option value="Red Velvet">
+<option value="Strawberry">
+</datalist>
+
+<!-- Icing colour and sweetness slider -->
+<p>Icing colour: <input type="color" name="icing"></p>
+<p>Sweetness: <input type="range" name="sweet" min="1" max="5" step="1"></p>
+
+<!-- Price calculator with output -->
+<p>Cupcakes (RM 3.00 each): <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"></p>
+<p>Cake Slices (RM 5.00 each): <input type="number" id="slices" name="slices" min="0" value="0"></p>
+<p>Total: RM <output name="total" for="cupcakes slices">0</output></p>
+
+<!-- Submit button -->
+<p><input type="submit" value="Place Order"></p>
+</form>
+</div>
+</div>
+
+<!-- Sidebar: price list using entities -->
+<div id="sidebar">
+<h2>Price List</h2>
+<ul>
+<li>Cupcake &ndash; RM&nbsp;3.00</li>
+<li>Cake Slice &ndash; RM&nbsp;5.00</li>
+</ul>
+<p>Orders &gt; 10 pieces get a free drink!</p>
+</div>
+
+<!-- Footer: copyright entity -->
+<div id="footer">
+<p>&copy; 2026 CampusBake&reg;</p>
+</div>
+
+</body>
+</html>
+<!-- TESTING
+1. Submit with all fields empty: the browser blocks it and shows "Please fill out this field"
+   on the Name field.
+2. Typing "myemail" in the e-mail field: the browser blocks it and asks for an "@" in the address.
+-->

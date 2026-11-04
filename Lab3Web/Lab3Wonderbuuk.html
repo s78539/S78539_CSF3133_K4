@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Contact Form with Inline Calculator</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Interactive Contact Form with Inline Calculator</h1>
+        <span>by Muhamad Anis Syahir</span>
+    </div>
+
+    <div id="content">
+        <form id="contactForm">
+            Email: <input type="email" name="useremail" required><br>
+            Contact Date: <input type="date" name="tarikh" required><br>
+            Your Satisfaction: <input type="range" name="satisfaction" min="1" max="10"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div><br>
+
+    <div id="calculator">
+        <h2>Inline Calculator</h2>
+        <form oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+            <input type="number" id="x" name="x" placeholder="Enter first number">
+            +
+            <input type="number" id="y" name="y" placeholder="Enter second number">
+            =
+            <output id="z" name="z" for="x y"></output>
+        </form>
+    </div><br>
+
+    <div id="footer">
+        <p>Email: [REDACTED EMAIL]</p>
+    </div>
+
+</body>
+</html>
