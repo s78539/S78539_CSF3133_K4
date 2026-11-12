@@ -1,0 +1,88 @@
+/* ===== General page style ===== */
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #fff8ee;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #0e6e6e;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== Headings: text decoration ===== */
+h1 { text-decoration: overline; }
+h2 { text-decoration: underline; color: #0e6e6e; }
+h3 { color: #d35400; }
+
+/* ===== Navigation bar ===== */
+nav ul {
+  list-style-type: none;       /* remove bullets */
+  margin: 0;
+  padding: 0;
+  background-color: #084c4c;
+  text-align: center;
+}
+nav li { display: inline-block; }
+nav a {
+  display: block;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;       /* remove underline */
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #084c4c;
+}
+nav a:hover { background-color: #f39c12; }  /* hover on menu item */
+
+/* ===== Link states (order: link, visited, hover, active) ===== */
+a:link { color: #ffffff; }
+a:visited { color: #ffe0b3; }
+a:hover { color: #000000; }
+a:active { color: #ff3b3b; }
+
+/* ===== ID selectors ===== */
+#destinations, #video, #trip {
+  width: 90%;
+  margin: 20px auto;
+}
+#trip h2 { color: #d35400; }
+
+/* ===== Class selectors ===== */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d5c4a1;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+}
+.old-price { text-decoration: line-through; color: #888888; }   /* old price crossed out */
+.new-price { color: #c0392b; font-weight: bold; font-size: 18px; }
+.caption { text-align: center; font-style: italic; }
+
+/* ===== Video (responsive) ===== */
+video { max-width: 100%; height: auto; }
+figure { margin: 0; text-align: center; }
+
+/* ===== Form ===== */
+.trip-form {
+  background-color: #ffffff;
+  border: 2px solid #0e6e6e;
+  padding: 15px;
+  width: 90%;
+  box-sizing: border-box;
+}
+.trip-form label { margin-right: 10px; }
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0e6e6e;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+}
+footer a:link, footer a:visited { color: #ffe0b3; }

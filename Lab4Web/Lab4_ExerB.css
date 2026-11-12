@@ -1,0 +1,38 @@
+/* ===== Navigation bar (moved from internal CSS) ===== */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li { display: inline-block; }
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ===== Link states (order: link, visited, hover, active) ===== */
+a:link { color: #1A5276; }
+a:visited { color: #7D3C98; }
+a:hover { color: #E67E22; }
+a:active { color: #C0392B; }
+
+/* Nav bar colours */
+nav a:link, nav a:visited { background-color: #FDEBD0; }
+nav a:hover { background-color: #F5CBA7; }
+
+/* ===== Promotion: old price ===== */
+.old-price { text-decoration: line-through; color: #888888; }
+
+/* ===== Responsive video ===== */
+video { max-width: 100%; height: auto; }
+
+/* ===== Feedback form ===== */
+.feedback-form {
+  background-color: #FDEBD0;
+  border: 2px solid #E67E22;
+  padding: 15px;
+  width: 90%;
+  box-sizing: border-box;
+}

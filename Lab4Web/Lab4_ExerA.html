@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Terengganu - Tourism Promotion</title>
+  <!-- External CSS (main styles) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Internal CSS (Fixed: removed type="text/css") -->
+  <style>
+    .seat-info { text-align: center; font-weight: bold; }
+    .hero-text { font-size: 18px; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Visit Terengganu</h1>
+    <p class="hero-text">Beaches, lakes and culture for students and visitors</p>
+  </header>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#trip">Join a Trip</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ===== SECTION 1: DESTINATIONS ===== -->
+    <section id="destinations">
+      <h2>Top Destinations</h2>
+
+      <article class="card">
+        <h3>Perhentian Islands</h3>
+        <p>Turquoise water, white sand and great snorkelling spots.</p>
+        <p>Promo: <span class="old-price">RM 299</span> <span class="new-price">RM 199</span></p>
+      </article>
+
+      <article class="card">
+        <h3>Tasik Kenyir</h3>
+        <p>The largest man-made lake in Southeast Asia, with waterfalls and jungle.</p>
+        <p>Promo: <span class="old-price">RM 250</span> <span class="new-price">RM 169</span></p>
+      </article>
+
+      <article class="card">
+        <h3>Pasar Payang</h3>
+        <p>A famous market in Kuala Terengganu for batik, songket and local food.</p>
+        <p>Promo: <span class="old-price">RM 120</span> <span class="new-price">RM 79</span></p>
+      </article>
+
+      <!-- Seats filled -->
+      <p class="seat-info">Trip seats filled:
+        <meter min="0" max="40" value="28">28 of 40</meter> (28/40)
+      </p>
+    </section>
+
+    <!-- ===== SECTION 2: VIDEO ===== -->
+    <section id="video">
+      <h2>Promotional Video</h2>
+      <figure>
+        <video width="400" height="300" controls>
+          <source src="terengganu.mp4" type="video/mp4">
+          <track src="captions.vtt" kind="captions" srclang="en" label="English" default>
+          Your browser does not support the video tag.
+        </video>
+        <figcaption class="caption">Experience the beauty of Terengganu.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== SECTION 3: TRIP INTEREST FORM ===== -->
+    <section id="trip">
+      <h2>Trip Interest Form</h2>
+      <form class="trip-form" action="#" method="post">
+
+        <p>
+          <label for="fullname">Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </p>
+
+        <p>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="mail" required>
+        </p>
+
+        <p>Traveller type:<br>
+          <label><input type="radio" name="traveller" value="student" checked> Student</label>
+          <label><input type="radio" name="traveller" value="staff"> Staff</label>
+          <label><input type="radio" name="traveller" value="public"> Public</label>
+        </p>
+
+        <p>Interests:<br>
+          <label><input type="checkbox" name="interest" value="islands"> Islands</label>
+          <label><input type="checkbox" name="interest" value="food"> Food</label>
+          <label><input type="checkbox" name="interest" value="culture"> Culture</label>
+          <label><input type="checkbox" name="interest" value="nature"> Nature</label>
+        </p>
+
+        <p><input type="submit" value="Submit"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 Visit Terengganu. All rights reserved.</p>
+    <address>
+      Contact: <a href="mailto:info@visitterengganu.my">info@visitterengganu.my</a>
+    </address>
+  </footer>
+
+</body>
+</html>
