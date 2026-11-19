@@ -1,0 +1,49 @@
+/* Body: Roboto font and background image shown once at top right */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* Headings use Merriweather */
+h1 { font-family: 'Merriweather', serif; }
+
+/* Header with cover background image and white text */
+header {
+  background-image: url("books.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+header h1 { color: white; margin: 0; text-shadow: 1px 1px 4px #000; }
+
+/* Paragraph readability */
+p { line-height: 1.6; }
+
+/* Navigation bar: dark horizontal bar */
+ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
+li { float: left; }
+li a { display: block; color: white; padding: 14px 16px; text-decoration: none; }
+li a:hover { background-color: #111; }
+li a.active { background-color: #04AA6D; }
+
+/* Table: single borders, grey even rows, hover */
+#products { border-collapse: collapse; width: 100%; }
+#products td, #products th { border: 1px solid #ddd; padding: 8px; }
+#products tr:nth-child(even) { background-color: #f2f2f2; }
+#products tr:hover { background-color: #ddd; }
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#products td:last-child { text-align: right; }
+
+/* Footer: subtle background, centred text */
+footer { background-color: #f1f1f1; text-align: center; padding: 10px; }
